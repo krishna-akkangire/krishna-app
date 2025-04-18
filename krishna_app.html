@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My App</title>
+  <script>
+    // Function to change the text content
+    function changeText() {
+      document.getElementById("welcomeMessage").innerHTML = "Hello, welcome to krishna app!";
+    }
+
+    // Set the function to run when the page loads
+    window.onload = changeText;
+  </script>
+</head>
+<body>
+  <h1 id="welcomeMessage">Hello from krishna app!</h1>
+  <button onclick="alert('You clicked me!')">Click me</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Krishna App</title>
+  <style>
+    /* Importing a nice Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd); /* soft blue gradient */
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-top: 40px;
+      color: #4b0082; /* Indigo Krishna-style */
+    }
+
+    button, a {
+      padding: 12px 24px;
+      font-size: 1em;
+      margin: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #6a5acd;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    button:hover, a:hover {
+      background-color: #483d8b;
+    }
+
+    img {
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+  </style>
+
+  <!-- Optional: Script for first page only -->
+  <script>
+    function changeText() {
+      document.getElementById("welcomeMessage").innerHTML = "Hello, welcome to Krishna App!";
+    }
+    window.onload = changeText;
+  </script>
+</head>
+<body>
+  <!-- First Page Content -->
+  <h1 id="welcomeMessage">Hello from Krishna App!</h1>
+  <button onclick="alert('You clicked me!')">Click me</button>
+  <br>
+  <a href="second.html">Go to Second Page</a>
+
+  <!-- OR for second.html change the inside part to this: -->
+  <!-- 
+  <h1>This is the second page of Krishna App!</h1>
+  <img src="krishna.jpg" alt="Lord Krishna" width="400">
+  <br>
+  <a href="index.html">Go back to Home</a>
+  -->
+</body>
+</html>
